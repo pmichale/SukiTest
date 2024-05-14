@@ -1,4 +1,3 @@
-using Avalonia.Controls;
 using SukiUI.Controls;
 
 namespace SukiTest.Main;

@@ -8,7 +8,7 @@ using Avalonia.Markup.Xaml;
 using Microsoft.Extensions.DependencyInjection;
 using SukiTest.Common;
 using SukiTest.Main;
-using Tx10.TxUi.Services;
+using SukiTest.Services;
 
 namespace SukiTest;
 
@@ -32,7 +32,7 @@ public partial class App : Application
             desktop.MainWindow = viewLocator?.Build(mainVm) as Window;
             if (desktop.MainWindow != null)
             {
-                desktop.MainWindow.WindowState = WindowState.Maximized;
+                // desktop.MainWindow.WindowState = WindowState.Maximized;
             }
         }
 

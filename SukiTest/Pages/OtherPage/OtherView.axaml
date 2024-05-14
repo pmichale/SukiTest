@@ -14,8 +14,8 @@
         <suki:GroupBox Margin="30" Header="Test functions">
             <Grid ColumnDefinitions="Auto, Auto, Auto, Auto" RowDefinitions="Auto, Auto, Auto, Auto">
                 <Button Classes="Flat" Margin="5" Grid.Row="0" Grid.Column="0">This button does nothing</Button>
-                <Button Classes="Flat" Margin="5" Grid.Row="0" Grid.Column="1" x:Name="AddNewTabButton">This button is useless too</Button> 
-                <Button Classes="Flat" Margin="5" Grid.Row="0" Grid.Column="2" x:Name="DeactivateRelays">OK</Button> 
+                <Button Classes="Flat" Margin="5" Grid.Row="0" Grid.Column="1">This button is useless too</Button> 
+                <Button Classes="Flat" Margin="5" Grid.Row="0" Grid.Column="2">OK</Button> 
             </Grid>
         </suki:GroupBox>
     </StackPanel>

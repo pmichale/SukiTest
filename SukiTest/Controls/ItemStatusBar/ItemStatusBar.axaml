@@ -6,7 +6,6 @@
              xmlns:system="clr-namespace:System;assembly=System.Runtime"
              xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
              xmlns:vm="using:SukiTest.Controls"
-             xmlns:content1="clr-namespace:SukiUI.Content;assembly=SukiUI"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="70"
              x:Class="SukiTest.Controls.ItemStatusBar"
              x:DataType="vm:ItemStatusBarViewModel">

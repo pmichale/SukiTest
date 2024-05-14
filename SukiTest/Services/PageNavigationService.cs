@@ -1,7 +1,7 @@
 ﻿using SukiTest.Common;
 using System;
 
-namespace Tx10.TxUi.Services;
+namespace SukiTest.Services;
 
 public class PageNavigationService
 {

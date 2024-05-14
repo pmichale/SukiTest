@@ -4,8 +4,8 @@ using Avalonia.Collections;
 using ReactiveUI;
 using ReactiveUI.Fody.Helpers;
 using SukiTest.Common;
-using Tx10.TxUi.Services;
-using Tx10.TxUi.Utilities;
+using SukiTest.Services;
+using SukiTest.Utilities;
 
 namespace SukiTest.Main;
 

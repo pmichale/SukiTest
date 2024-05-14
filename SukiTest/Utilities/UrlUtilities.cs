@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace Tx10.TxUi.Utilities;
+namespace SukiTest.Utilities;
 
 public static class UrlUtilities
 {

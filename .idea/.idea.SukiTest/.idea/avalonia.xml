@@ -4,8 +4,10 @@
     <option name="projectPerEditor">
       <map>
         <entry key="SukiTest/App.axaml" value="SukiTest/SukiTest.csproj" />
+        <entry key="SukiTest/Controls/ItemStatusBar/ItemStatusBar.axaml" value="SukiTest/SukiTest.csproj" />
         <entry key="SukiTest/Controls/SlotStatusBar/SlotStatusBar.axaml" value="SukiTest/SukiTest.csproj" />
         <entry key="SukiTest/Main/MainView.axaml" value="SukiTest/SukiTest.csproj" />
+        <entry key="SukiTest/Pages/ChartPage/ChartView.axaml" value="SukiTest/SukiTest.csproj" />
         <entry key="SukiTest/Pages/OtherPage/OtherView.axaml" value="SukiTest/SukiTest.csproj" />
         <entry key="SukiTest/Pages/SomePage/SomeView.axaml" value="SukiTest/SukiTest.csproj" />
         <entry key="SukiTest/Pages/TestPage/ContextMenusView.axaml" value="SukiTest/SukiTest.csproj" />

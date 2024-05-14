@@ -2,9 +2,9 @@ using Avalonia.Controls;
 
 namespace SukiTest.Pages
 {
-    public partial class OtherView : UserControl
+    public partial class ChartView : UserControl
     {
-        public OtherView()
+        public ChartView()
         {
             InitializeComponent();
         }

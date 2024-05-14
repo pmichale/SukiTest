@@ -40,7 +40,7 @@
                     </Style>
                 </StackPanel.Styles>
                 <Button Classes="Basic"
-                        CommandParameter="https://bitbucket01.com.stihlgroup.net/projects/EZDSW/repos/tx10/browse"
+                        CommandParameter="https://bitbucket.com"
                         ToolTip.Tip="Open On BitBucket.">
                     <icons:MaterialIcon Kind="Bitbucket" />
                 </Button>

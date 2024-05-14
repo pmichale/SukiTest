@@ -10,7 +10,7 @@ namespace SukiTest.Pages
         
         public ObservableCollection<ItemStatusBarViewModel> StatusBarViewModels { get; }
         
-        public TestViewModel() : base("Test Page", MaterialIconKind.TestTube, 1)
+        public TestViewModel() : base("Test Page", MaterialIconKind.TestTube, 3)
         {
             StatusBarViewModels =
             [
