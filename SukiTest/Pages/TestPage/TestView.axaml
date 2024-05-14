@@ -1,0 +1,37 @@
+<UserControl x:Class="SukiTest.Pages.TestView"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:suki="clr-namespace:SukiUI.Controls;assembly=SukiUI"
+             xmlns:vm="clr-namespace:SukiTest.Pages"
+             xmlns:controls="clr-namespace:SukiTest.Controls"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             x:DataType="vm:TestViewModel"
+             mc:Ignorable="d">
+    
+    <Grid RowDefinitions="Auto,*">
+        
+        <suki:GroupBox Grid.Row="0" Classes="HeaderContent" Margin="30, 30, 30, 0" Header="All Status Bars: " />
+            
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Visible">
+            <StackPanel Margin="5" Spacing="5">
+                <ItemsControl Margin="5" ItemsSource="{Binding StatusBarViewModels}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Margin="0" Spacing="5"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <controls:ItemStatusBar />
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+    
+</UserControl>

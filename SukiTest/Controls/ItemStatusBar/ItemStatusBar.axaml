@@ -1,0 +1,68 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:suki="clr-namespace:SukiUI.Controls;assembly=SukiUI"
+             xmlns:system="clr-namespace:System;assembly=System.Runtime"
+             xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:vm="using:SukiTest.Controls"
+             xmlns:content1="clr-namespace:SukiUI.Content;assembly=SukiUI"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="70"
+             x:Class="SukiTest.Controls.ItemStatusBar"
+             x:DataType="vm:ItemStatusBarViewModel">
+
+        <UserControl.Resources>
+            <vm:BoolToConnectionIconConverter x:Key="BoolToConnectionIconConverter" />
+        </UserControl.Resources>
+    
+  
+    <suki:GlassCard Margin="10">
+        
+        <suki:GlassCard.Resources>
+            <system:Double x:Key="GlassOpacity">0.2</system:Double>
+            <Color x:Key="SukiGlassCardBackground">GhostWhite</Color>
+        </suki:GlassCard.Resources>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Margin="5,0,5,0" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Text="{Binding ItemName}"></TextBlock>
+            <TextBlock Margin="5,0,5,0" Grid.Column="1" VerticalAlignment="Center" Text="Connection: "></TextBlock>
+            <icons:MaterialIcon Margin="5,0,5,0" Grid.Column="2" x:Name="Indicator"
+                                Kind="{Binding IsConnected,
+                                Converter={StaticResource BoolToConnectionIconConverter}}"
+                                Width="32" Height="32"/>
+
+            <Button Classes="Flat" Margin="20,0,5,0" Grid.Row="0" Grid.Column="3" >
+                <icons:MaterialIcon Kind="Play" Width="24" Height="24" />
+            </Button>
+            <Button Classes="Flat" Margin="5,0,5,0" Grid.Row="0" Grid.Column="4" >
+                <icons:MaterialIcon Kind="Stop" Width="24" Height="24" />
+            </Button>
+            <Button Classes="Flat" Margin="5,0,5,0" Grid.Row="0" Grid.Column="5" >
+                <icons:MaterialIcon Kind="Restart" Width="24" Height="24" />
+            </Button>
+            <Button Classes="Flat" Margin="5,0,20,0" Grid.Row="0" Grid.Column="6" >
+            <!-- ToolTip.Tip="Open On BitBucket." -->
+                <icons:MaterialIcon Kind="ChartBellCurveCumulative" Width="24" Height="24" />
+            </Button>
+            
+            <TextBlock Margin="5,0,5,0" Grid.Row="0" Grid.Column="7" VerticalAlignment="Center" Text="{Binding OpenedFile}"></TextBlock>
+        </Grid>
+        
+    </suki:GlassCard>
+
+</UserControl>
